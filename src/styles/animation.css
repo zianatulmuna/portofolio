@@ -1,0 +1,8 @@
+:root {
+  --animate-duration: 5s;
+  --animate-delay: 0.9s;
+}
+
+.animate__fadeIn {
+  animation-duration: var(--animate-duration);
+}
