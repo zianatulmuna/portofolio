@@ -1,0 +1,63 @@
+/* 
+  BUTTON
+*/
+.btn-root-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-root-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-root-secondary:hover, .btn-root-primary:hover {
+  background-color: var(--text-color);
+  color: #fff!important;
+} 
+
+
+/* 
+  BACKGROUND
+*/
+.bg-root-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-root-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+}
+
+
+/* 
+  TEXT
+*/
+.text-color {
+  color: var(--text-color);
+}
+
+.text-root-primary {
+  color: var(--primary-color);
+}
+
+.text-root-secondary {
+  color: var(--secondary-color);
+}
+
+
+/* 
+  ELSE
+*/
+.border-bottom-hr {
+  border-image: linear-gradient(to right, #6E07F3, #a35cff) 1;
+  border-bottom: 2px solid transparent;
+  width: 50px;
+  margin: 10px 0;
+}

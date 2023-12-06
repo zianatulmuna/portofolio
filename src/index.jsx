@@ -5,6 +5,8 @@ import App from './App';
 
 // styling
 import './styles/style.css';
+import './styles/custom.css';
+import './styles/responsive.css';
 import './styles/animation.css';
 
 import 'animate.css';

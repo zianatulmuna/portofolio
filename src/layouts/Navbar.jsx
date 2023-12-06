@@ -19,18 +19,18 @@ function Navbar() {
   })
   
   return (
-    <header className={`portofolio__header ${changeColor ? 'header-color' : '' } d-flex align-items-center justify-content-between sticky-top`}>
+    <header className={`navbar-header-trans ${changeColor ? 'navbar-header px-3 px-sm-4 px-md-5 px-xl-9 py-2' : '' } d-flex align-items-center justify-content-between sticky-top`}>
       <div className='hstack gap-3'>
         <img src="/assets/zian.png" className='logo' alt="" />
         <h5>ZIANATUL MUNA</h5>
       </div>
-      <nav className="navigation">
+      <nav className="navigation d-none d-lg-block">
         <ul>
-          <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} end>HOME</NavLink></li>
-          <li><NavLink to="/about" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} end>ABOUT</NavLink></li>
-          <li><NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} end>CONTACT</NavLink></li>
+          <li><a href='/'>HOME</a></li>
+          <li><a href='/#about'>ABOUT</a></li>
+          <li><a href='/#contact'>CONTACT</a></li>
           <li>
-            <NavLink to="/project" className='btn btn-root-secondary rounded-5 px-4 d-none d-lg-block text-dark'>PROJECT</NavLink>
+            <a href='/#project'>PROJECT</a>
           </li>
         </ul>
       </nav>
