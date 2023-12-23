@@ -26,11 +26,11 @@ function Navbar() {
       </div>
       <nav className="navigation d-none d-lg-block">
         <ul>
-          <li><a href='/'>HOME</a></li>
+          <li><a href='/#'>HOME</a></li>
           <li><a href='/#about'>ABOUT</a></li>
           <li><a href='/#contact'>CONTACT</a></li>
           <li>
-            <a href='/#project'>PROJECT</a>
+            <a href='/#project' className='btn btn-root-secondary px-3 py-2 rounded-5 text-dark'>PROJECT</a>
           </li>
         </ul>
       </nav>

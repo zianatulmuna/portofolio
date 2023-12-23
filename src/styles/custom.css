@@ -11,10 +11,44 @@
   color: var(--text-color);
 }
 
+.btn-root-primary-outline {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-root-secondary-outline {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
 .btn-root-secondary:hover, .btn-root-primary:hover {
   background-color: var(--text-color);
   color: #fff!important;
 } 
+
+.btn-root-primary-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff!important;
+} 
+
+.btn-root-secondary-outline:hover {
+  background-color: var(--secondary-color);
+  color: #fff!important;
+} 
+
+.btn-root-primary-outline-grad {
+  background: linear-gradient(#fff, #fff) padding-box,                                                  linear-gradient(to right, #6E07F3, #a35cff) border-box;
+  border: 2px solid transparent;
+  color: var(--primary-color);
+} 
+
+.btn-root-primary-outline-grad:hover {
+  background: linear-gradient(to right, #6E07F3, #a35cff)padding-box,                                                  
+  linear-gradient(to right, #6E07F3, #a35cff) border-box;
+  color: #fff!important;
+} 
+
 
 
 /* 

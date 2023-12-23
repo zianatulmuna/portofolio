@@ -14,7 +14,7 @@ const AboutSection = () => {
         <h1 className="section-title fw-bold">About <span className='text-root-secondary'>Me</span></h1>
         <div className="section-body" data-aos="fade-up" data-aos-duration="1000">
           <div className="row row-cols-1 row-cols-xl-2 g-2 g-xl-5">
-            <div className="col about-col-profile">
+            <div className="col about-col-profile mb-5">
               <div className='about-profile'>
                 <p className='mb-2'>A person who focuses on being a web developer with 2 years of experience in creating responsive websites and managing database. Able to work in frontend and backend development to provide a good user experience. I'm trained to work in teams and have worked on several web projects.</p> 
                 <p>I'm quietly detail-oriented, persistent, highly committed, and enjoy learning new things in the process. I'm interested in jobs where I can contribute, learn, and grow. Please, feel free to reach out.</p>
@@ -28,7 +28,7 @@ const AboutSection = () => {
             </div>
             <div className="col about-col-history">
               <div className="about-history">
-                <ul className="nav nav-underline d-flex justify-content-between mb-3" id="pills-tab" role="tablist">
+                <ul className="nav nav-underline d-flex justify-content-between flex-column flex-md-row mb-3" id="pills-tab" role="tablist">
                   <li className="nav-basic nav-item" role="presentation">
                     <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
                       <div className="hstack gap-2">

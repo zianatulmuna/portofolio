@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 import { HiOutlineBriefcase } from "react-icons/hi";
-import { BsArrowDownRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const HomeSection = () => {
   return (
@@ -16,8 +16,8 @@ const HomeSection = () => {
           </div>
           
           <div className="home-header-button d-flex gap-3">
-            <button className='btn btn-root-secondary rounded-5 px-4 py-3 mt-5 d-flex align-items-center gap-3 animate__animated animate__zoomIn'><h6 className='fw-bold'>My Works</h6><h5><HiOutlineBriefcase /></h5></button>
-            <button className='btn btn-outline-light rounded-5 px-4 py-3 mt-5 d-flex align-items-center gap-3 animate__animated animate__zoomIn'><h6 className='fw-bold'>Reach Me</h6><h5><BsArrowDownRight /></h5></button>
+            <a href='#project' className='btn btn-root-secondary rounded-5 px-4 py-3 mt-5 d-flex align-items-center gap-3 animate__animated animate__zoomIn'><h6 className='fw-bold'>My Works</h6><h5><HiOutlineBriefcase /></h5></a>
+            <a href="#contact" className='btn btn-outline-light rounded-5 px-4 py-3 mt-5 d-flex align-items-center gap-3 animate__animated animate__zoomIn'><h6 className='fw-bold'>Reach Me</h6><h5><BsArrowUpRight /></h5></a>
           </div>
         </div>
         <div className="home-image animate__animated animate__flipInY">

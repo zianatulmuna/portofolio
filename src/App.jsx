@@ -9,6 +9,7 @@ import SkillPage from './pages/SkillPage';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from './pages/ContactPage';
 import Preloader from './pages/Preloader';
+import Footer from './layouts/Footer';
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
                     <Route path='/project' Component={ProjectPage} />
                     <Route path='/contact' Component={ContactPage} />
                 </Routes>
+                <Footer />
             </div>
         )
     )

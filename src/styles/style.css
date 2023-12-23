@@ -6,10 +6,19 @@
 
 :root {
     --primary-color: #6244c5;
+    /* --secondary-color: #eea300; */
     --secondary-color: #FFC448;
+    --tertiary-color: #eea300;
     --text-color: #1f1f1f;
     --section-px-lg: 0 90px;
     --section-px-md: 0 60px;
+}
+*:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 body {
@@ -174,8 +183,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 .section-about {
     padding: var(--section-px-lg);
-    height: 95vh;
+    /* min-height: 100vh; */
     background-color: #fff;  
+    height: 700px;
 }
 
 .section-about .about-profile p {
@@ -288,9 +298,9 @@ h1, h2, h3, h4, h5, h6 {
     SERVICES
 */
 .section-service {
-    padding: 0 90px;
-    height: 100vh;
-    background: var(--primary-color);
+    /* padding: 0 90px; */
+    /* height: 100vh; */
+    /* background: var(--primary-color); */
 }
 
 .section-service .section-title {
@@ -443,12 +453,98 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-
-
-
-
-.portofolio-project {
-    height: 100vh;
+/* 
+    PROJECT
+*/
+.section-project {
+    /* height: 100vh; */
     background: #fff;
 }
 
+.section-project .project-image::after {
+    background: var(--secondary-color);
+    width: 200px;
+    height: 200px;
+}
+
+.section-project .project-image img {
+    width: 700px;
+}
+
+.section-project .section-body .project-first {
+    margin-bottom: 90px;
+}
+
+
+/* 
+    SKILL
+*/
+
+.section-skill {
+    position: relative;
+    top: -100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 60%;
+    background: linear-gradient(#fff, #fff) padding-box,                                                  linear-gradient(to top right, #6E07F3, #a35cff) border-box;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.section-skill .section-body .tech-image {
+    width: 70px;
+    height: 70px;
+    opacity: 90%;
+}
+.section-skill .section-body .tech-image img {
+    width: 50px;
+}
+
+
+/* 
+    CONTACT
+*/
+.section-contact .contact-list a {
+   width: 60px;
+   height: 60px;
+   font-size: 30px;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100%;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   -o-border-radius: 100%;
+}
+
+.section-contact .contact-text p {
+    width: 70%;
+}
+
+.section-contact .icon-hello {
+    width: 30px;
+    animation-name: swing;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+/* 
+    FOOTER
+*/
+.footer {
+    
+    color: #fff;
+}
+.footer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 0;    
+    background-color: #eea300;
+    background-size:cover;
+}

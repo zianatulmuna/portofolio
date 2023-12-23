@@ -27,7 +27,7 @@ const CertificationComponent = () => {
 
   return (
     <div className="container">
-      <div className="row row-cols-2 g-3">
+      <div className="row row-cols-1 row-cols-sm-2 g-3">
       {certificates.map((certificate) => (
         <FlipCard key={certificate.id} {...certificate} />
       ))}

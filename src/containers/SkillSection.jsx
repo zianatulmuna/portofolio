@@ -5,73 +5,71 @@ import { SiJavascript, SiPhp, SiMysql } from "react-icons/si";
 import { TbBrandReact, TbBrandLaravel } from "react-icons/tb";
 
 const SkillSection = () => {
+  const techs = [
+    {
+      id: "1",
+      name: "HTML",
+      image: "/images/techs/1.png",
+    },
+    {
+      id: "2",
+      name: "CSS",
+      image: "/images/techs/2.png",
+    },
+    {
+      id: "3",
+      name: "JavaScript",
+      image: "/images/techs/3.png",
+    },
+    {
+      id: "4",
+      name: "PHP",
+      image: "/images/techs/4.png",
+    },
+    {
+      id: "5",
+      name: "Java",
+      image: "/images/techs/5.png",
+    },
+    {
+      id: "6",
+      name: "Laravel",
+      image: "/images/techs/6.png",
+    },
+    {
+      id: "5",
+      name: "MySQL",
+      image: "/images/techs/7.png",
+    },
+    {
+      id: "5",
+      name: "Bootstrap",
+      image: "/images/techs/8.png",
+    },
+    {
+      id: "5",
+      name: "Git",
+      image: "/images/techs/9.png",
+    },
+  ];
+
   return (
     <section>
-      <div className="portofolio-skill py-5">
-        <h1 className="section-title fw-bold"><span className='text-color'>My</span> Skill</h1>
-        <div className="portofolio-body">
-          <div className='row row-cols-sm-3 row-cols-md-4 row-cols-lg-5 margin-auto'>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <ImHtmlFive />
+      <div className="section-skill shadow-lg py-4 py-xl-5 px-4 rounded-5">
+        <h1 className="section-title fw-bold mb-5" data-aos="zoom-in" data-aos-duration="1000"><span className='text-root-secondary'>Languages & Tools</span>  I Used</h1>
+        <div className="section-body d-flex flex-wrap justify-content-center gap-3 gap-md-4 gap-xl-5">
+          {techs.map((tech) => (
+            <>
+              <div className="d-flex justify-content-center align-items-center rounded-circle"  data-aos="zoom-in" data-aos-duration="1000">
+                <div className="d-flex flex-column justify-content-center align-items-center gap-2">
+                  <div className="tech-image d-flex justify-content-center align-items-center">
+                    <img src={tech.image} alt="" className='' />
+                  </div> 
+                  <p className="tech-name fw-bold">{tech.name}</p>
+                </div>
               </div>
-              <h6 className='my-2'>HTML <span className='fw-bold'>(90%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <FaBootstrap />
-              </div>
-              <h6 className='my-2'>Bootstrap <span className='fw-bold'>(80%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <SiJavascript />
-              </div>
-              <h6 className='my-2'>Javascript <span className='fw-bold'>(70%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <TbBrandReact />
-              </div>
-              <h6 className='my-2'>React <span className='fw-bold'>(70%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <SiPhp />
-              </div>
-              <h6 className='my-2'>PHP <span className='fw-bold'>(70%)</span></h6>
-            </div>            
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <TbBrandLaravel />
-              </div>
-              <h6 className='my-2'>Laravel <span className='fw-bold'>(70%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <SiMysql />
-              </div>
-              <h6 className='my-2'>My SQL <span className='fw-bold'>(70%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <FaGithub />
-              </div>
-              <h6 className='my-2'>GitHub <span className='fw-bold'>(70%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <FaGithub />
-              </div>
-              <h6 className='my-2'>REST API <span className='fw-bold'>(70%)</span></h6>
-            </div>
-            <div className='col mx-5'>
-              <div className="icon-skill rounded-circle bg-white">
-                <FaGithub />
-              </div>
-              <h6 className='my-2'>Progressive Web Apps <span className='fw-bold'>(70%)</span></h6>
-            </div>
-          </div>
+            </>
+          ))}
         </div>
       </div>
     </section>
