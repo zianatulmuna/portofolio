@@ -56,7 +56,7 @@ const SkillSection = () => {
   return (
     <section>
       <div className="section-skill shadow-lg py-4 py-xl-5 px-4 rounded-5">
-        <h1 className="section-title fw-bold mb-5" data-aos="zoom-in" data-aos-duration="1000"><span className='text-root-secondary'>Languages & Tools</span>  I Used</h1>
+        <h1 className="section-title fw-bold mb-5" data-aos="zoom-in" data-aos-duration="1000">Languages & Tools <span className='text-root-secondary'>I Used</span></h1>
         <div className="section-body d-flex flex-wrap justify-content-center gap-3 gap-md-4 gap-xl-5">
           {techs.map((tech) => (
             <>
