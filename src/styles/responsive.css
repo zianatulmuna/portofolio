@@ -61,7 +61,8 @@
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 800px) {
   .section-project .project-image img {
-    width: 600px;
+    width: 100%;
+    max-width: 370px;
   }
    
   .section-skill {
@@ -80,9 +81,6 @@
     margin-bottom: 20px;
   }
 
-  .section-project .project-image img {
-    width: 500px;
-  }
   /* 
       ABOUT
     */
@@ -107,10 +105,18 @@
     height: 1360px;
   }
 
+  .section-title {
+    font-size: 32px;
+  }
+
   .section-contact .contact-list a {
     width: 50px;
     height: 50px;
     font-size: 26px;
+  }
+
+  .section-about .about-profile .icon-sign img {
+    height: 45px;
   }
 }
 
@@ -119,6 +125,21 @@
   .section-about {
     height: 1420px;
   }
+
+  /* .section-service .card {
+    width: 280px;
+    height: 300px;
+  }
+
+  .section-service .card .service-image {
+    width: 250px;
+    height: 200px;
+  }
+
+  .section-service .service-content {
+    top: 230px;
+    height: fit-content;
+  } */
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 400px) { 
@@ -127,12 +148,7 @@
   }
 }
   
-  /* Medium devices (tablets, 768px and up) */
-@media (max-width: 800px) {
-  .section-project .project-image img {
-    width: 370px;
-  }
-}
+
 
 
 

@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
     NAVBAR
 */
 .navbar-header-trans {
-    padding: 18px 90px;
-    color: #fff;
+    /* padding: 18px 90px; */
+    color: #fff !important;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -77,39 +77,18 @@ h1, h2, h3, h4, h5, h6 {
     animation-duration: 1s;
 }
 
-.navbar-header-trans .navigation ul li a {
-    color:#fff;
+.navbar-header-trans .nav-link, .navbar-header-trans h5 {
+    color:#fff !important;
 }
 
-.navbar-header {
-    background-color: #fff;
-    color: var(--text-color);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.082);
-}
 
-.navbar-header .navigation ul li a {
-    color: var(--text-color);
-}
-
-.navbar-header-trans .navigation ul {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-header-trans .navigation ul li {
-    display: inline-block;
-    padding: 10px 24px;
-    margin: 0;
-    
-}
-
-.navbar-header-trans .navigation ul li a {
+.navbar-header-trans .nav-link {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.navbar-header-trans .navigation ul li a:hover {
+.navbar-header-trans .nav-link:hover {
     color: var(--secondary-color);
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -118,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: all 0.5s ease;
 }
 
-.navbar-header-trans .navigation ul li .active {
+.navbar-header-trans .nav-link .active {
     color: var(--secondary-color);
 }
 
@@ -135,9 +114,32 @@ h1, h2, h3, h4, h5, h6 {
     background-size:cover;
 }
 
+.navbar-header-trans .navbar-toggler {
+    color: #fff !important;
+}
+
+
+.navbar-header {
+    background-color: #fff;
+    color: var(--text-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.082);
+}
+
+.navbar-header .nav-link{
+    color: var(--text-color);
+}
+
 .navbar-header .logo {
     width: 40px;
     height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 0;    
+    background-color: var(--secondary-color);
+    background-size:cover;
 }
 
 
