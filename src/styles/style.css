@@ -8,10 +8,12 @@
     --primary-color: #6244c5;
     /* --secondary-color: #eea300; */
     --secondary-color: #FFC448;
-    --tertiary-color: #eea300;
+    --tertiary-color: #ffb71c;
     --text-color: #1f1f1f;
     --section-px-lg: 0 90px;
     --section-px-md: 0 60px;
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.082);
+    --shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.233);
 }
 *:hover {
     transition: all 0.5s ease;
@@ -148,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .section-title {
     font-family: 'DM Sans', sans-serif;
+    font-weight: 1000;
     font-size: 40px;
     letter-spacing: -1px;
     text-align: center;
@@ -175,8 +178,14 @@ h1, h2, h3, h4, h5, h6 {
     animation-delay: 2s;
 }
 
+.section-home .home-image {
+    /* max-height: 550px; */
+    max-width: 480px;
+}
+
 .section-home .home-image img {
-    height: 550px;
+    /* height: 550px; */
+    width: 100%;
 }
 
 
@@ -469,8 +478,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
 }
 
+.section-project .project-image {
+    max-width: 700px;
+}
+
 .section-project .project-image img {
-    width: 700px;
+    width: 100%;
 }
 
 .section-project .section-body .project-first {
@@ -538,6 +551,7 @@ h1, h2, h3, h4, h5, h6 {
     
     color: #fff;
 }
+
 .footer img {
     width: 60px;
     height: 60px;
@@ -550,3 +564,79 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #eea300;
     background-size:cover;
 }
+
+
+/* 
+    DETAIL PROJECT
+*/
+.page-project {
+    
+    min-height: 100vh;
+}
+
+.page-project .project-title {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.page-project .project-title h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    /* background: linear-gradient(to top right, #6E07F3, #cba8fa);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+}
+.page-project .project-laptop {
+    max-width: 700px;
+}
+.page-project .project-laptop img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.page-project .project-section h2 {
+    font-weight: 900;
+    /* margin-top: 28px; */
+    margin-bottom: 18px;
+    background: linear-gradient(to right, #6E07F3, #cba8fa, #6E07F3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.page-project .project-section .feature-list .feature-video img {
+    width: 500px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.page-project .project-section .feature-list .feature-video img:hover {
+    width: 700px;
+    box-shadow: var(--shadow-lg);
+}
+
+.page-project  .accordion-button {
+    box-shadow: none;
+}
+
+.page-project  .accordion-button:not(.collapsed) {
+    background-color: #9342fc;
+    color: #fff;
+    box-shadow: none;
+}
+.page-project .project-logo {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.page-project .project-logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.page-project .project-tool img {
+    height: 40px;
+}
+

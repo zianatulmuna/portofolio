@@ -11,7 +11,7 @@ const AboutSection = () => {
   return (
     <section id='about'>
       <div className="section-about px-3 px-sm-4 px-md-4 px-lg-5 px-xl-9 py-5">
-        <h1 className="section-title fw-bold">About <span className='text-root-secondary'>Me</span></h1>
+        <h1 className="section-title">About <span className='text-root-tertiary'>Me</span></h1>
         <div className="section-body" data-aos="fade-up" data-aos-duration="1000">
           <div className="row row-cols-1 row-cols-xl-2 g-2 g-xl-5">
             <div className="col about-col-profile mb-5">

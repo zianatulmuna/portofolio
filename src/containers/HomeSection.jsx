@@ -5,7 +5,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const HomeSection = () => {
   return (
-    <section id='home'>
+    <section>
       <div className="section-home px-3 px-sm-4 px-md-5 px-xl-9 d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <div className="home-header text-white">
           <div className="home-header-text animate__animated animate__bounceIn">
@@ -20,7 +20,7 @@ const HomeSection = () => {
             <a href="#contact" className='btn btn-outline-light rounded-5 px-4 py-3 mt-5 d-flex align-items-center gap-3 animate__animated animate__zoomIn'><h6 className='fw-bold'>Reach Me</h6><h5><BsArrowUpRight /></h5></a>
           </div>
         </div>
-        <div className="home-image animate__animated animate__flipInY">
+        <div className="home-image px-4 px-xl-3 animate__animated animate__flipInY">
           <img src="/images/zian.png" alt="" />
         </div>
       </div>

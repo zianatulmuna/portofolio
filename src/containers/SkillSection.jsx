@@ -7,59 +7,59 @@ import { TbBrandReact, TbBrandLaravel } from "react-icons/tb";
 const SkillSection = () => {
   const techs = [
     {
-      id: "1",
+      id: "tech1",
       name: "HTML",
-      image: "/images/techs/1.png",
+      image: "/images/techs/HTML.png",
     },
     {
-      id: "2",
+      id: "tech2",
       name: "CSS",
-      image: "/images/techs/2.png",
+      image: "/images/techs/CSS.png",
     },
     {
-      id: "3",
+      id: "tech3",
       name: "JavaScript",
-      image: "/images/techs/3.png",
+      image: "/images/techs/JavaScript.png",
     },
     {
-      id: "4",
+      id: "tech4",
       name: "PHP",
-      image: "/images/techs/4.png",
+      image: "/images/techs/PHP.png",
     },
     {
-      id: "5",
+      id: "tech5",
       name: "Java",
-      image: "/images/techs/5.png",
+      image: "/images/techs/Java.png",
     },
     {
-      id: "6",
+      id: "tech6",
       name: "Laravel",
-      image: "/images/techs/6.png",
+      image: "/images/techs/Laravel.png",
     },
     {
-      id: "5",
+      id: "tech7",
       name: "MySQL",
-      image: "/images/techs/7.png",
+      image: "/images/techs/MySQL.png",
     },
     {
-      id: "5",
+      id: "tech8",
       name: "Bootstrap",
-      image: "/images/techs/8.png",
+      image: "/images/techs/Bootstrap.png",
     },
     {
-      id: "5",
+      id: "tech9",
       name: "Git",
-      image: "/images/techs/9.png",
+      image: "/images/techs/GitHub.png",
     },
   ];
 
   return (
     <section>
       <div className="section-skill shadow-lg py-4 py-xl-5 px-4 rounded-5">
-        <h1 className="section-title fw-bold mb-5" data-aos="zoom-in" data-aos-duration="1000">Languages & Tools <span className='text-root-secondary'>I Used</span></h1>
+        <h1 className="section-title mb-5" data-aos="zoom-in" data-aos-duration="1000">Languages & Tools <span className='text-root-tertiary'>I Used</span></h1>
         <div className="section-body d-flex flex-wrap justify-content-center gap-3 gap-md-4 gap-xl-5">
           {techs.map((tech) => (
-            <>
+            <div key={tech.id}>
               <div className="d-flex justify-content-center align-items-center rounded-circle"  data-aos="zoom-in" data-aos-duration="1000">
                 <div className="d-flex flex-column justify-content-center align-items-center gap-2">
                   <div className="tech-image d-flex justify-content-center align-items-center">
@@ -68,7 +68,7 @@ const SkillSection = () => {
                   <p className="tech-name fw-bold">{tech.name}</p>
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
