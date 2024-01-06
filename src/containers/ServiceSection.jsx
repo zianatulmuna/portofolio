@@ -1,5 +1,5 @@
 // import React from 'react';
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import {  Autoplay, Pagination, Navigation  } from 'swiper/modules';
+import {  Pagination  } from 'swiper/modules';
 
 const ServiceSection = () => {
   const services = [

@@ -75,7 +75,7 @@ const projects = [
     logo: "/images/projects/2-logo-foodintake.png",
     duration: "Juni 2022",
     techs: ["JavaScript", "API", "GitHub", "Progressive Web Apps"],
-    body: "website yang dibangun untuk memberikan informasi mengenai resep dan detail kandungan bahan makanan untuk membantu mengatur dan memenuhi kebutuhan nutrisi. Food Intake diharapkan mampu membantu pengguna merencanakan asupan makanan yang dibutuhkan.",
+    body: "Website yang memberikan informasi mengenai resep dan detail kandungan bahan makanan untuk membantu mengatur dan memenuhi kebutuhan nutrisi. Food Intake diharapkan mampu membantu pengguna merencanakan asupan makanan yang dibutuhkan.",
     developer: "Zianatul Muna, Ananta Dwi Prayoga Alwy",
     overview: "FoodIntake adalah web app yang memberikan informasi mengenai resep dan kandungan makanan untuk membantu mengatur dan memenuhi kebutuhan nutrisi. User dapat mencari nama makanan dan memberikan filter nutrisi tertentu atau jenis makanan tertentu. Untuk merencanakan asupan perhari, user dapat menambahkan resep makanan yang dipilih ke menu Bookmark.\nWebsite ini dibangun untuk memenuhi Capstone Project program SIB Dicoding Batch 2 dan berhasil mendapatkan penghargaan sebagai salah satu Best Capstone Project pada kategori Book and Reference. Website ini dibangun dengan tech Progressive Web App sehingga memiliki beberapa fitur aplikasi native seperti dapat di pasang pada desktop maupun homescreen HP dan dapat diakses secara offline. Informasi diambil menggunakan REST API dari Spoonacular.",
     features: [
@@ -92,12 +92,12 @@ const projects = [
       {
         name: "Installable",
         body: "Website dapat didownload dan memiliki splash screen dan icon sendiri di desktop maupun di home screen. Hal ini membuat website ini seperti aplikasi native namun sebenarnya tetap berjalan diatas browser.",
-        video: "/images/projects/1-installable.gif",
+        video: "/images/projects/2-installable.gif",
       },
       {
         name: "Offline and background operation",
         body: "Progressive Web Apps memberikan kemampuan pada website ini untuk dapat diakses tanpa koneksi maupun dalam koneksi internet lemah. Namun, konten yang bisa ditampilkan hanya konten atau halaman yang sebelumnya sudah diakses dalam keadaan online.",
-        video: "/images/projects/1-offline.gif",
+        video: "/images/projects/2-offline.gif",
       },
       {
         name: "Responsive Design",
@@ -195,7 +195,7 @@ const projects = [
     techs: ["JavaScript", "React Js", "Bootstrap", "GitHub", "Vercel"],
     body: "Website Catatan Pribadi yang memiliki fitur tambah catatan, arsipkan catatan, aktifkan catatan, dan hapus catatan.",
     developer: "Zianatul Muna",
-    overview: "Denotes adalah website catatan pribadi yang dibangun dengan framework React Js. User dapat mencari, menambahkan, mengarsipkan, mengaktifkan, dan menghapus catatan. Website masih dalam pengembangan lebih lanjut, penyimpanan catatan masih menggunakan penyimpanan lokal yang akan hilang ketika halaman di reload.",
+    overview: "Denotes adalah website catatan pribadi yang dibangun dengan framework React Js. User dapat mencari, menambahkan, mengarsipkan, mengaktifkan, dan menghapus catatan. Website ini masih dalam pengembangan lebih lanjut, penyimpanan catatan masih menggunakan penyimpanan lokal yang akan hilang ketika halaman di reload.",
     features: [
       {
         name: "Penyimpanan Catatan Pribadi",

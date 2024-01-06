@@ -1,8 +1,4 @@
 import React from 'react';
-import { ImHtmlFive } from "react-icons/im";
-import { FaBootstrap, FaGithub } from "react-icons/fa";
-import { SiJavascript, SiPhp, SiMysql } from "react-icons/si";
-import { TbBrandReact, TbBrandLaravel } from "react-icons/tb";
 
 const SkillSection = () => {
   const techs = [
@@ -75,6 +71,11 @@ const SkillSection = () => {
       id: "tech14",
       name: "Vercel",
       image: "/images/techs/Vercel.png",
+    },
+    {
+      id: "tech15",
+      name: "Figma",
+      image: "/images/techs/Figma.png",
     },
   ];
 

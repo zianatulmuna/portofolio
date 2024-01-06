@@ -6,7 +6,6 @@
 
 :root {
     --primary-color: #6244c5;
-    /* --secondary-color: #eea300; */
     --secondary-color: #FFC448;
     --tertiary-color: #ffb71c;
     --text-color: #1f1f1f;
@@ -308,12 +307,6 @@ h1, h2, h3, h4, h5, h6 {
 /* 
     SERVICES
 */
-.section-service {
-    /* padding: 0 90px; */
-    /* height: 100vh; */
-    /* background: var(--primary-color); */
-}
-
 .section-service .section-title {
     margin-bottom: 20px;
 }
@@ -440,7 +433,6 @@ h1, h2, h3, h4, h5, h6 {
     PROJECT
 */
 .section-project {
-    /* height: 100vh; */
     background: #fff;
 }
 
@@ -575,13 +567,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     letter-spacing: 3px;
     text-transform: uppercase;
-    /* background: linear-gradient(to top right, #6E07F3, #cba8fa);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
 }
+
 .page-project .project-laptop {
     max-width: 700px;
 }
+
 .page-project .project-laptop img {
     max-width: 100%;
     object-fit: contain;
@@ -597,14 +588,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-project .project-section .feature-list .feature-video img {
-    width: 500px;
+    max-width: 500px;
+    max-height: 280px;
     box-shadow: var(--shadow);
     cursor: pointer;
-}
-
-.page-project .project-section .feature-list .feature-video img:hover {
-    width: 700px;
-    box-shadow: var(--shadow-lg);
 }
 
 .page-project  .accordion-button {
@@ -629,8 +616,5 @@ h1, h2, h3, h4, h5, h6 {
 .page-project .project-tool img {
     height: 40px;
 }
-/* .page-project .project-time {
-    margin: auto;
-    width: 70%;
-} */
+
 

@@ -1,10 +1,10 @@
 import { React, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import NavbarProject from '../layouts/NavbarProject';
 import { useParams } from 'react-router-dom';
+import NavbarProject from '../layouts/NavbarProject';
 import { getProject, getProjectByIndex } from '../utils/project';
 import { FaGithub } from "react-icons/fa";
-import { FaLink, FaLaptopCode, FaRegUser } from "react-icons/fa6";
+import { FaLink } from "react-icons/fa6";
 import { HiMiniArrowUpRight, HiMiniArrowRight, HiMiniArrowLeft } from "react-icons/hi2";
 import { TbCalendarTime } from "react-icons/tb";
 import { AiOutlineUser } from "react-icons/ai";
@@ -30,9 +30,9 @@ const ProjectPage = () => {
               <img src={project.imageDetail} alt="" />
             </div>
             <div className="col-xl-5">
-              <h3 className='text-root-secondary rounded-5 mb-2 fw-bold'>{project.name}</h3>
-              <h1 className='text-white mb-3'>{project.title}</h1>
-              <div className="project-time text-start">
+              <h3 className='text-root-secondary rounded-5 mb-2 fw-bold animate__animated animate__zoomIn'>{project.name}</h3>
+              <h1 className='text-white mb-3 animate__animated animate__zoomIn'>{project.title}</h1>
+              <div className="project-time text-start animate__animated animate__zoomIn">
                 <div className="hstack align-items-start justify-content-center gap-2 text-white fw-bold">
                   <p><TbCalendarTime /></p>
                   <p>{project.duration}</p>
@@ -42,7 +42,7 @@ const ProjectPage = () => {
                   <p>{project.developer}</p>
                 </div>
               </div>
-              <div className="project-button d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mt-4 mb-5 mb-xl-0 mt-xl-5">
+              <div className="project-button d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mt-4 mb-5 mb-xl-0 mt-xl-5 animate__animated animate__bounceIn">
                 <a href={project.github} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><FaGithub /> Github</a>
                 { project.link ?
                   <a href={project.link} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><FaLink s/> Website Link</a>
@@ -58,7 +58,7 @@ const ProjectPage = () => {
             </div>
           </div>
           <div className="bg-white py-5">
-            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-overview'>
+            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-overview' data-aos="fade-up" data-aos-duration="1000">
               <h2>Project Overview</h2>
               <div className="d-flex flex-column flex-xl-row gap-2 gap-xl-5">
                 <div>
@@ -73,7 +73,7 @@ const ProjectPage = () => {
                 </div>
               </div>
             </div>
-            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-techs'>
+            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-techs' data-aos="fade-up" data-aos-duration="1000">
               <h2>Tools I Used</h2>
               <div className="project-tool d-flex flex-wrap gap-4 gap-xl-5">
                 <img src="/images/techs/HTML.png" alt="" />
@@ -83,7 +83,7 @@ const ProjectPage = () => {
                 ))}
               </div>
             </div>
-            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-features'>
+            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-features' data-aos="fade-up" data-aos-duration="1000">
               <h2>Features</h2>
               <div className='feature-list'>
                 <div className="accordion accordion-flush" id="accordionFlushExample">
@@ -111,7 +111,7 @@ const ProjectPage = () => {
                 </div>
               </div>
             </div>
-            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15" id='project-scopes'>
+            <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15" id='project-scopes' data-aos="fade-up" data-aos-duration="1000">
               <h2>My Job Desk</h2>
               <div className="d-flex flex-wrap gap-3">
                 {project.scope.split(',').map((item, i) => (

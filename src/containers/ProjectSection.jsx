@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { getBestProjects, getOtherProjects } from '../utils/project';
-import { FaGithub, FaUser } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
+import { FaEye } from "react-icons/fa6";
 import { MdRemoveRedEye } from "react-icons/md";
 import { HiMiniArrowUpRight, HiUser } from "react-icons/hi2";
 import { RxDividerVertical } from "react-icons/rx";
-import { FaLink } from "react-icons/fa";
-import { FaEye } from "react-icons/fa6";
 
 const ProjectSection = () => {
   const bestProjects = getBestProjects();
@@ -54,11 +53,11 @@ const ProjectSection = () => {
         <div className="mb-5">
           <h1 className='section-title mb-2'>Other Noteworthy <span className='text-root-tertiary'>Projects</span></h1>
         </div> 
-        <div className="section-body">
+        <div className="section-body mb-5">
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
           {otherProjects.map((project) => (
             <div className="col">
-              <div className="card shadow-root-lg rounded-4 h-100">
+              <div className="card shadow-root-lg rounded-4 h-100" data-aos="fade-up" data-aos-duration="3000">
                 <div className="card-image rounded-4">
                   <img src={project.image} className="card-img-top rounded-top-4" alt="..." />
                 </div>

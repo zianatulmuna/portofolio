@@ -1,14 +1,11 @@
 import React from 'react';
 import CertificationComponent from '../components/CertificationComponent';
 import { HiOutlineDocumentText, HiOutlineLocationMarker, HiOutlineUser, HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
-import { BsArrowDownRight } from "react-icons/bs";
-import { GrCertificate } from "react-icons/gr";
 import { PiGraduationCap, PiCertificateLight } from "react-icons/pi";
 import { BiUser } from "react-icons/bi";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 const AboutSection = () => {
-  
   return (
     <section id='about'>
       <div className="section-about px-3 px-sm-4 px-md-4 px-lg-5 px-xl-9 py-5">
@@ -17,7 +14,7 @@ const AboutSection = () => {
           <div className="row row-cols-1 row-cols-xl-2 g-2 g-xl-5">
             <div className="col about-col-profile mb-5">
               <div className='about-profile'>
-                <p className='mb-2'>A person who focuses on being a web developer with 2 years of experience in creating responsive websites and managing database. Able to work in frontend and backend development to provide a good user experience. I'm used to working alone but am also trained to work in teams and have worked on several web projects.</p> 
+                <p className='mb-2'>A person who focuses on being a web developer with 2 years of experience in creating responsive websites and managing database. Able to work in frontend and backend development to provide a good user experience. I'm used to working independently but am also trained to work in teams and have worked on several web projects.</p> 
                 <p>I'm quietly detail-oriented, persistent, highly committed, and enjoy learning new things in the process. I'm interested in jobs where I can contribute, learn, and grow. Please, feel free to reach out.</p>
                 <div className="d-flex align-items-end gap-3">
                   <button className='btn btn-root-primary  rounded-4 px-3 py-2 px-lg-4 py-lg-3 mt-5 d-flex align-items-center gap-3'><h6 className='fw-bold'>Download CV</h6><h5><HiOutlineDocumentText /></h5></button>

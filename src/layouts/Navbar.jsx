@@ -21,7 +21,6 @@ function Navbar() {
   return (
     <nav className={`navbar navbar-expand-md ${changeColor ? 'navbar-header py-2' : 'navbar-header-trans py-4' }  px-3 px-sm-4 px-md-5 px-xl-9 sticky-top`}>
       <div className="container-fluid p-0">
-        {/* <a className="" href="#">Navbar</a> */}
         <div className='navbar-brand hstack gap-3'>
           <img src="/assets/zian.png" className='logo' alt="" />
           <h5>ZIANATUL MUNA</h5>

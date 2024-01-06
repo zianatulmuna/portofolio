@@ -41,10 +41,6 @@
     margin-top: 18px;
   }
 
-  /* .section-home .home-image img {
-    height: 350px;
-  } */
-
   .section-home .home-header {
     text-align: center;
   }
@@ -59,12 +55,7 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 800px) {
-  /* .section-project .project-image img {
-    width: 100%;
-    max-width: 370px;
-  } */
-   
+@media (max-width: 800px) {   
   .section-skill {
     margin-left: 30px;
     margin-right: 30px;
@@ -82,18 +73,17 @@
   }
 
   /* 
-      ABOUT
-    */
-    .section-about {
-      height: 1100px;
-    }
+    ABOUT
+  */
+  .section-about {
+    height: 1100px;
+  }
 
   .section-contact .contact-text p {
     width: 100%;
   }
   
 }
-
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -137,23 +127,9 @@
   .section-about {
     height: 1420px;
   }
-
-  /* .section-service .card {
-    width: 280px;
-    height: 300px;
-  }
-
-  .section-service .card .service-image {
-    width: 250px;
-    height: 200px;
-  }
-
-  .section-service .service-content {
-    top: 230px;
-    height: fit-content;
-  } */
 }
-/* Small devices (landscape phones, 576px and up) */
+
+
 @media (max-width: 400px) { 
   .section-about {
     height: 1450px;
@@ -169,21 +145,26 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) { 
+  .page-project .project-section .feature-list .feature-video img:hover {
+    max-width: 700px;
+    max-height: 450px;
+    box-shadow: var(--shadow-lg);
+  }
 }
 
-/* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
   
 }
 
-/* Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
   
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
   .px-xl-9 {
     padding-left: 90px !important;
@@ -195,7 +176,7 @@
   }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
+
 @media (min-width: 1400px) {
   
 }

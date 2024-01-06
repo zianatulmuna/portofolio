@@ -20,7 +20,7 @@ function NavbarProject() {
   })
   
   return (
-    <nav className={`navbar navbar-expand-md ${changeColor ? 'navbar-header py-2' : 'navbar-header-trans py-4' }  px-3 px-sm-4 px-md-5 px-xl-9 sticky-top`}>
+    <nav className={`navbar navbar-expand-md ${changeColor ? 'navbar-header py-2' : 'navbar-header-trans py-4' }  px-3 px-sm-4 px-md-5 px-xl-9 sticky-top animate__animated animate__fadeInDown`}>
       <div className="container-fluid p-0">
         <a href="/" className='navbar-brand link-root-dark hstack gap-2'>
           <FaArrowLeft />
