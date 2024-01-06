@@ -31,10 +31,10 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div className="navbar-nav py-3 py-md-0 text-center gap-2 gap-md-4 gap-xl-5">
-            <a className="nav-link" aria-current="page" href="/#">HOME</a>
-            <a className="nav-link" href="/#about">ABOUT</a>
-            <a className="nav-link" href="/#contact">CONTACT</a>
-            <a className="btn btn-root-secondary px-3 py-2 rounded-5 text-dark" href='/#project'>PROJECT</a>
+            <a className="nav-link link-root-dark" aria-current="page" href="/#">HOME</a>
+            <a className="nav-link link-root-dark" href="/#about">ABOUT</a>
+            <a className="nav-link link-root-dark" href="/#contact">CONTACT</a>
+            <a className="btn btn-root-secondary px-3 py-2 rounded-5 text-color fw-bold" href='/#project'>PROJECT</a>
           </div>
         </div>
       </div>

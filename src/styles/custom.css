@@ -52,11 +52,15 @@
   background: linear-gradient(#fff, #fff) padding-box,                                                  linear-gradient(to right, #6E07F3, #a35cff) border-box;
   border: 2px solid transparent;
   color: var(--primary-color);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 } 
 
 .btn-root-primary-outline-grad:hover {
-  background: linear-gradient(to right, #6E07F3, #a35cff)padding-box,                                                  
-  linear-gradient(to right, #6E07F3, #a35cff) border-box;
+  background: linear-gradient(to right, #6E07F3, #a35cff)padding-box,                                                    linear-gradient(to right, #6E07F3, #a35cff) border-box;
   color: #fff!important;
 } 
 
@@ -105,6 +109,11 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.text-root-secondary-grad {
+  background: linear-gradient(to bottom right, #ffb71c, #ffda8b, #FFC448);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
 
 .link-root-dark {
@@ -117,6 +126,19 @@
   color: var(--tertiary-color);
 }
 
+.link-root-primary {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.link-root-primary:hover {
+  color: #1f1f1f;
+}
+
+.shadow-root {
+  box-shadow: var(--shadow);
+}
 .shadow-root-lg {
   box-shadow: var(--shadow-lg);
 }

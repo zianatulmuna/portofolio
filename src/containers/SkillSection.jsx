@@ -51,6 +51,31 @@ const SkillSection = () => {
       name: "Git",
       image: "/images/techs/GitHub.png",
     },
+    {
+      id: "tech10",
+      name: "React Js",
+      image: "/images/techs/React Js.png",
+    },
+    {
+      id: "tech11",
+      name: "API",
+      image: "/images/techs/API.png",
+    },
+    {
+      id: "tech12",
+      name: "Livewire",
+      image: "/images/techs/Livewire.png",
+    },
+    {
+      id: "tech13",
+      name: "Progressive Web Apps",
+      image: "/images/techs/Progressive Web Apps.png",
+    },
+    {
+      id: "tech14",
+      name: "Vercel",
+      image: "/images/techs/Vercel.png",
+    },
   ];
 
   return (

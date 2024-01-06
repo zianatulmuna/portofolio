@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import NavbarProject from '../layouts/NavbarProject';
 import { useParams } from 'react-router-dom';
 import { getProject, getProjectByIndex } from '../utils/project';
-import { FaGithub} from "react-icons/fa";
-import { FaLink,FaLaptopCode } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaLink, FaLaptopCode, FaRegUser } from "react-icons/fa6";
 import { HiMiniArrowUpRight, HiMiniArrowRight, HiMiniArrowLeft } from "react-icons/hi2";
+import { TbCalendarTime } from "react-icons/tb";
+import { AiOutlineUser } from "react-icons/ai";
 
 
 const ProjectPage = () => {
@@ -28,13 +30,30 @@ const ProjectPage = () => {
               <img src={project.imageDetail} alt="" />
             </div>
             <div className="col-xl-5">
-              <h2 className='rounded-5 mb-2 fw-bold'>{project.name}</h2>
-              <h1 className='mb-3'>{project.title}</h1>
-              <p className='small mb-3 text-root-secondary'>{project.developer}</p>
+              <h3 className='text-root-secondary rounded-5 mb-2 fw-bold'>{project.name}</h3>
+              <h1 className='text-white mb-3'>{project.title}</h1>
+              <div className="project-time text-start">
+                <div className="hstack align-items-start justify-content-center gap-2 text-white fw-bold">
+                  <p><TbCalendarTime /></p>
+                  <p>{project.duration}</p>
+                </div>
+                <div className='hstack align-items-start justify-content-center gap-2 text-white fw-bold mt-2'>
+                  <p><AiOutlineUser /> </p>
+                  <p>{project.developer}</p>
+                </div>
+              </div>
               <div className="project-button d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mt-4 mb-5 mb-xl-0 mt-xl-5">
                 <a href={project.github} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><FaGithub /> Github</a>
-                <a href={project.link} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><FaLink s/> Website Link</a>
-                <a href={project.demo} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><HiMiniArrowUpRight s/> Demo</a>
+                { project.link ?
+                  <a href={project.link} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><FaLink s/> Website Link</a>
+                  :
+                  ''
+                }
+                { project.demo ?
+                  <a href={project.demo} target='_blank' className='btn btn-root-secondary rounded-5 p-2 px-3'><HiMiniArrowUpRight s/> Demo</a>
+                  :
+                  ''
+                }
               </div>
             </div>
           </div>
@@ -47,14 +66,16 @@ const ProjectPage = () => {
                     <p key={i} className='mb-4'>{paragraph}</p>
                   ))}
                 </div>
-                <div className="project-logo shadow-root-lg rounded-5 p-4">
-                  <img src={project.logo} alt="" />
+                <div className="">
+                  <div className="project-logo d-flex align-items-center justify-content-center shadow-root-lg rounded-5 p-4">
+                    <img src={project.logo} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="project-section px-3 px-sm-4 px-md-5 px-xl-15 pb-5" id='project-techs'>
               <h2>Tools I Used</h2>
-              <div className="project-tool d-flex flex-wrap gap-4 gap-xl-4">
+              <div className="project-tool d-flex flex-wrap gap-4 gap-xl-5">
                 <img src="/images/techs/HTML.png" alt="" />
                 <img src="/images/techs/CSS.png" alt="" />
                 {project.techs.map((tech, i) => (
@@ -66,18 +87,22 @@ const ProjectPage = () => {
               <h2>Features</h2>
               <div className='feature-list'>
                 <div className="accordion accordion-flush" id="accordionFlushExample">
-                  {project.feature.map((fitur, i) => (
+                  {project.features.map((feature, i) => (
                     <div key={i} className="accordion-item">
                       <h4 className="accordion-header">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-${i}`} aria-expanded="false" aria-controls={`flush-${i}`}>
-                          <h5>{fitur.name}</h5>
+                          <h5>{feature.name}</h5>
                         </button>
                       </h4>
                       <div id={`flush-${i}`} className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body d-flex flex-column-reverse flex-xl-row gap-3 gap-xl-5 align-items-center">
-                            <p>{fitur.body}</p>
+                            <p>{feature.body}</p>
                             <div className="feature-video">
-                              <img src={fitur.video} alt="" />
+                              { feature.video ?
+                                <img src={feature.video} alt="" />
+                                :
+                                ''
+                              }
                             </div>
                           </div>
                       </div>

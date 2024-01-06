@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedinIn} from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { TbMailFilled } from "react-icons/tb";
 import { IoLogoWhatsapp } from "react-icons/io";
 
@@ -17,6 +17,7 @@ const ContactSection = () => {
           <a href="https://wa.me/+6287812529226" target='_blank' className='btn btn-root-secondary-trans '><IoLogoWhatsapp /></a>
           <a href="mailto:zianatulmn@gmail.com" target='_blank' className='btn btn-root-secondary-trans'><TbMailFilled /></a>
           <a href="https://www.linkedin.com/in/zianatulmuna/" target='_blank' className='btn btn-root-secondary-trans'><FaLinkedinIn /></a>
+          <a href="https://www.github.com/zianatulmuna/" target='_blank' className='btn btn-root-secondary-trans'><FaGithub /></a>
         </div>
       </div>
     </section>
