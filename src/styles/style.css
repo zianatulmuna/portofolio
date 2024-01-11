@@ -14,12 +14,17 @@
     --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.082);
     --shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.233);
 }
+
 *:hover {
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -428,6 +433,28 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: 1.5s;
 }
 
+.swiper-button-prev, .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 90%) !important;
+    height: 50px !important;
+    width: 50px !important;
+    background: var(--secondary-color);
+    box-shadow: var(--shadow-lg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 20px !important;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background: var(--tertiary-color);
+}
 
 /* 
     PROJECT

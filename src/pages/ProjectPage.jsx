@@ -16,9 +16,9 @@ const ProjectPage = () => {
   const nextProject = getProjectByIndex(project.index + 1);
   const prevProject = getProjectByIndex(project.index - 1);
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
   return (
     <>

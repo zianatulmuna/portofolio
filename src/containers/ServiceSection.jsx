@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import {  Pagination  } from 'swiper/modules';
+import {  Pagination, Navigation  } from 'swiper/modules';
 
 const ServiceSection = () => {
   const services = [
@@ -46,24 +46,21 @@ const ServiceSection = () => {
 
   return (
     <section>
-      <div className="section-service px-3 px-sm-4 px-md-5 px-xl-9 py-5 pt-0">
+      <div className="section-service px-3 px-sm-4 px-md-5 px-xl-9 py-5 pt-0" id='service'>
         <h1 className="section-title text-white"><span className='text-root-secondary'>Services</span> I Provide</h1>
         <div className="section-body" data-aos="fade-up" data-aos-duration="1000">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              768: {
-                slidesPerView: 2,
-              },
-             }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
+        <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}        
+        grabCursor={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
             {services.map((service) => (
               <SwiperSlide key={service.id}>
                <div className="card rounded-4 shadow">
