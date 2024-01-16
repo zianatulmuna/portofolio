@@ -74,7 +74,7 @@ const projects = [
     imageDetail: "/images/projects/2-1.png",
     logo: "/images/projects/2-logo-foodintake.png",
     duration: "Juni 2022",
-    techs: ["JavaScript", "API", "GitHub", "Progressive Web Apps"],
+    techs: ["JavaScript", "Node Js", "API", "GitHub", "Progressive Web Apps"],
     body: "Website yang memberikan informasi mengenai resep dan detail kandungan bahan makanan untuk membantu mengatur dan memenuhi kebutuhan nutrisi. Food Intake diharapkan mampu membantu pengguna merencanakan asupan makanan yang dibutuhkan.",
     developer: "Zianatul Muna, Ananta Dwi Prayoga Alwy",
     overview: "FoodIntake adalah web app yang memberikan informasi mengenai resep dan kandungan makanan untuk membantu mengatur dan memenuhi kebutuhan nutrisi. User dapat mencari nama makanan dan memberikan filter nutrisi tertentu atau jenis makanan tertentu. Untuk merencanakan asupan perhari, user dapat menambahkan resep makanan yang dipilih ke menu Bookmark.\nWebsite ini dibangun untuk memenuhi Capstone Project program SIB Dicoding Batch 2 dan berhasil mendapatkan penghargaan sebagai salah satu Best Capstone Project pada kategori Book and Reference. Website ini dibangun dengan tech Progressive Web App sehingga memiliki beberapa fitur aplikasi native seperti dapat di pasang pada desktop maupun homescreen HP dan dapat diakses secara offline. Informasi diambil menggunakan REST API dari Spoonacular.",

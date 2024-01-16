@@ -54,26 +54,31 @@ const SkillSection = () => {
     },
     {
       id: "tech11",
+      name: "Node Js",
+      image: "/images/techs/Node Js.png",
+    },
+    {
+      id: "tech12",
       name: "API",
       image: "/images/techs/API.png",
     },
     {
-      id: "tech12",
+      id: "tech13",
       name: "Livewire",
       image: "/images/techs/Livewire.png",
     },
     {
-      id: "tech13",
+      id: "tech14",
       name: "Progressive Web Apps",
       image: "/images/techs/Progressive Web Apps.png",
     },
     {
-      id: "tech14",
+      id: "tech15",
       name: "Vercel",
       image: "/images/techs/Vercel.png",
     },
     {
-      id: "tech15",
+      id: "tech16",
       name: "Figma",
       image: "/images/techs/Figma.png",
     },

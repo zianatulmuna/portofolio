@@ -11,7 +11,7 @@ const HomeSection = () => {
           <div className="home-header-text animate__animated animate__bounceIn">
             <h2 className='hello'>Hi, I'm Zian <img src="/assets/hello.png" alt="" className='icon-hello mb-2' /></h2>
             <h4>A <span className='text-root-secondary'><Typewriter words={['Web', 'Front-End', 'Back-End']} loop={false} typeSpeed={150} deleteSpeed={70} delaySpeed={2000} /></span><Cursor /> Developer</h4>
-            <p className="mt-4 mb-2">A Fresh Graduate and a Junior Fullstack Web Developer, building the Front-end and Back-End of Websites and Web Applications.</p>
+            <p className="mt-4 mb-2">A Fresh Graduate and a Junior Web Developer, building the Front-end and Back-End of Websites and Web Applications.</p>
             <p>Love learning in the process and embrace challenges to grow.</p>
           </div>
           
