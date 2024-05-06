@@ -185,7 +185,7 @@ const projects = [
   },
   {
     id: "denotes",
-    index: 4,
+    index: 5,
     name: "Website Personal Note",
     title: "Denotes",
     image: "/images/projects/5.png",

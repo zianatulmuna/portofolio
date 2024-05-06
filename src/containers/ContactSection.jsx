@@ -14,7 +14,7 @@ const ContactSection = () => {
         </div>
         <h2 className='fw-bold mt-5'>Say Hello <img src="/assets/hello.png" alt="" className='icon-hello mb-2' /></h2>
         <div className="contact-list d-flex justify-content-center gap-4 my-4" data-aos="zoom-in" data-aos-duration="4000">
-          <a href="https://wa.me/+6287812529226" target='_blank' className='btn btn-root-secondary-trans '><IoLogoWhatsapp /></a>
+          <a href="https://api.whatsapp.com/send?phone=6287812529226" target='_blank' className='btn btn-root-secondary-trans'><IoLogoWhatsapp /></a>
           <a href="mailto:zianatulmn@gmail.com" target='_blank' className='btn btn-root-secondary-trans'><TbMailFilled /></a>
           <a href="https://www.linkedin.com/in/zianatulmuna/" target='_blank' className='btn btn-root-secondary-trans'><FaLinkedinIn /></a>
           <a href="https://www.github.com/zianatulmuna/" target='_blank' className='btn btn-root-secondary-trans'><FaGithub /></a>

@@ -32,12 +32,12 @@ const ProjectPage = () => {
             <div className="col-xl-5">
               <h3 className='text-root-secondary rounded-5 mb-2 fw-bold animate__animated animate__zoomIn'>{project.name}</h3>
               <h1 className='text-white mb-3 animate__animated animate__zoomIn'>{project.title}</h1>
-              <div className="project-time text-start animate__animated animate__zoomIn">
+              <div className="project-time animate__animated animate__zoomIn">
                 <div className="hstack align-items-start justify-content-center gap-2 text-white fw-bold">
                   <p><TbCalendarTime /></p>
                   <p>{project.duration}</p>
                 </div>
-                <div className='hstack align-items-start justify-content-center gap-2 text-white fw-bold mt-2'>
+                <div className='hstack align-items-start justify-content-center gap-2 text-white text-start fw-bold mt-2'>
                   <p><AiOutlineUser /> </p>
                   <p>{project.developer}</p>
                 </div>
